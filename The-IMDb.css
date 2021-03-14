@@ -1,0 +1,258 @@
+body {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    margin: 0%;
+    justify-content: center;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    background-color: black;
+}
+
+nav {
+    white-space: nowrap;
+    display: flex;
+    width: 100%;
+    height: 48px;
+    padding: 4px;
+    justify-content: center;
+    background-color: rgb(37, 37, 37);
+    color: white;
+    font-weight: 500;
+    align-items: center;
+}
+
+.first-menu {
+    display: none;
+    cursor: pointer;
+}
+
+#menu,
+#all,
+#sin,
+#pro,
+#wlist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 16px 0 16px;
+    cursor: pointer;
+    height: 32px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+#imdb {
+    margin-left: 10px;
+    height: 32px;
+    width: 64px;
+    cursor: pointer;
+}
+
+#menu {
+    width: 5rem;
+    margin: 0;
+    margin-left: 10px;
+    font-size: 14.5px;
+}
+
+#mimg {
+    width: 18.7px;
+    margin-right: 5px;
+}
+
+
+/* ----------------------------scarch---------------------------- */
+
+#scarch {
+    display: flex;
+    align-items: center;
+    width: 782.562px;
+    margin-left: 10px;
+}
+
+#all {
+    width: fit-content;
+    padding: 0 7px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-radius: 5px 0 0 5px;
+}
+
+#triangle {
+    height: 5px;
+    margin-left: 3px;
+}
+
+#all-list {
+    display: none;
+    position: absolute;
+    color: white;
+    list-style: none;
+    margin-top: 402px;
+    width: 222px;
+    background-color: rgb(37, 37, 37);
+    border-top: 10px solid rgb(37, 37, 37);
+    border-bottom: 10px solid rgb(37, 37, 37);
+    cursor: pointer;
+}
+
+li {
+    display: flex;
+    text-align: center;
+    height: 50px;
+    align-items: center;
+}
+
+li:nth-child(7) {
+    border-top: 0.5px solid white;
+}
+
+#list-img {
+    width: 21px;
+    padding: 10px;
+}
+
+.right-arrow {
+    width: 21px;
+    padding-left: 35px;
+}
+
+input {
+    display: flex;
+    height: 20px;
+    width: 100%;
+    border: 0;
+    padding: 6.25px 0 6px 8px;
+    border-left: 1px solid black;
+    outline: none;
+}
+
+button {
+    height: 32px;
+    width: 40px;
+    border: none;
+    padding-right: 11px;
+    border-radius: 0 5px 5px 0;
+    background-color: white;
+    outline: none;
+    cursor: pointer;
+}
+
+
+/* ----------------------------post scarch----------------------------- */
+
+#pro {
+    width: 5rem;
+    align-items: center;
+    margin: 0 0 0 10px;
+    padding: 0 8px 0 16px;
+}
+
+#vline {
+    background-color: rgb(90, 90, 90);
+    height: 32px;
+    width: 2px;
+    margin: 0 8px 0 8px;
+}
+
+#wl-img {
+    border-radius: 2px;
+    margin-right: 7px;
+}
+
+#sin {
+    margin-right: 10px;
+}
+
+
+/* ----------------------------active's and hover's----------------------------- */
+
+#menu:active,
+#imdb:active,
+#pro:active,
+#wlist:active,
+#sin:active {
+    border: 1px dashed white;
+}
+
+#menu:hover,
+#pro:hover,
+#wlist:hover,
+#sin:hover {
+    background-color: rgb(59, 59, 59);
+}
+
+li:active {
+    border-top: 1px dashed white;
+    border-bottom: 1px dashed white;
+}
+
+li:hover {
+    background-color: rgb(66, 66, 66);
+}
+
+li>img:hover {
+    filter: brightness(3);
+}
+
+#ls-adv:hover {
+    text-decoration: underline;
+}
+
+#all:hover {
+    background-color: rgb(221, 221, 221);
+}
+
+
+/* ======================for responsive=========================== */
+
+@media only screen and (max-width:1300px) {
+    #scarch {
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    #scarch {
+        width: 700px;
+    }
+    #pro,
+    #wlist,
+    #menu {
+        display: none;
+    }
+    #vline {
+        margin: 0 8px 0 20px;
+    }
+    #sin {
+        margin-right: 10px;
+    }
+    #imdb {
+        padding: 0 5px;
+    }
+    .first-menu {
+        display: flex;
+        position: 0 10px 0 8px;
+    }
+    @media only screen and (max-width:500px) {
+        input,
+        #all,
+        #vline,
+        #all-list {
+            display: none;
+        }
+        #scarch {
+            justify-content: flex-end;
+        }
+        button {
+            background: none;
+            color: white;
+            filter: brightness(2.5);
+            border-radius: 50%;
+        }
+        button:hover {
+            background: rgb(24, 24, 24);
+        }
+    }
+}

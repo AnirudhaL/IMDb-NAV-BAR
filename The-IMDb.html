@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>IMDb: Ratings, Reviews, and Where to Watch the Best Movies & TV ...</title>
+    <link rel="stylesheet" href="The-IMDb.css">
+    <link rel="icon" href="./imgs/imdb-title.jpg">
+</head>
+
+<body>
+    <nav>
+        <img src='./imgs/menu.svg' alt='f-menu' id='mimg' class='first-menu'>
+        <img src='./imgs/IMDB.png' alt='imdb' id='imdb'>
+        <p id="menu">
+            <img src="./imgs/menu.svg" alt="menu" id="mimg">Menu
+        </p>
+        <!-- Scarch  -->
+        <div id='scarch'>
+            <div id='all' onclick='all_li()'>
+                <div id='present-list'>All</div>
+                <img src='./imgs/triangle.svg' alt='triangle' id='triangle'>
+            </div>
+            <ui id='all-list'>
+                <li id='ls-all'>
+                    <img src="./imgs/scarch.svg" id="list-img">All
+                </li>
+                <li id='ls-title'>
+                    <img src="./imgs/film-img.svg" id="list-img">Title
+                </li>
+                <li id='ls-tv'>
+                    <img src="./imgs/television.svg" id="list-img">TV Episodes
+                </li>
+                <li id='ls-celibs'>
+                    <img src="./imgs/group.svg" id="list-img">Celibs
+                </li>
+                <li id='ls-comp'>
+                    <img src="./imgs/company.svg" id="list-img">Compaines
+                </li>
+                <li id='ls-key'>
+                    <img src="./imgs/right-arrow-triangle.svg" id="list-img">Keywords
+                </li>
+                <li id='ls-adv'>
+                    <img src="./imgs/document-page-blank.svg" id="list-img">Advance Scarch
+                    <img src="./imgs/right-arrow-triangle.svg" class="right-arrow" id="list-img">
+                </li>
+            </ui>
+            <input placeholder="Scarch IMDb">
+            <button type="submit"><img src="./imgs/scarch.svg"></button>
+        </div>
+        <!-- post scarch -->
+        <div id="pro">IMDBPro</div>
+        <div id="vline"></div>
+        <div id="wlist"><img src='./imgs/whtchlist.svg' id="wl-img">Watchlist</div>
+        <div id="sin">Sign In</div>
+    </nav>
+</body>
+<script src="The-IMDb.js"></script>
+
+</html>
